@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d3 force</title>
+
+    <style>
+      * {
+        margin: 0 0;
+        color: rgb(211, 210, 210);
+      }
+      body {
+        background-color: #0c0037;
+      }
+      a {
+        text-decoration: underline;
+        color: rgb(211, 210, 210);
+      }
+      a:visited {
+        text-decoration: none;
+        color: rgb(211, 210, 210);
+      }
+      .intro {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      .intro p {
+        margin-top: 5px;
+      }
+      .content_wrap {
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+      .content_wrap {
+        position: relative;
+        width: 30%;
+      }
+      .content {
+        position: absolute;
+        font-size: 12px;
+        top: 0;
+        left: 0;
+      }
+      .content p {
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+      .content span {
+        position: absolute;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .content span:first-of-type {
+        left: 26px;
+        bottom: 5px;
+      }
+      .content span:last-of-type {
+        bottom: 5px;
+      }
+      #chart {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .link {
+        stroke: rgb(211, 210, 210);
+        stroke-width: 1px;
+      }
+      .node {
+        cursor: move;
+        stroke: rgb(211, 210, 210);
+        stroke-width: 3px;
+        stroke-dasharray: 3;
+      }
+      .node.fixed {
+        stroke: #fff;
+        stroke-width: 2px;
+        stroke-dasharray: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <h3>Global cloud service market segments and their leaders, 2019</h3>
+      <p>
+        Source:
+        <a href="https://kinsta.com/blog/cloud-market-share/" target="_blank"
+          >Kinsta via Synergy Research Group</a
+        >
+      </p>
+    </div>
+    <div class="content_wrap">
+      <div class="content">
+        <p>
+          The global cloud service market has experienced rapid growth last
+          year. The pandemic has pushed many companies to shift their businesses
+          online, which created huge demands for cloud services.
+        </p>
+        <p>
+          The world public could services is expected to grow 6.3% in 2020 to
+          total $257.9 billion, up from $242.7 billion in 2019,
+          <a
+            href="https://www.gartner.com/en/newsroom/press-releases/2020-07-23-gartner-forecasts-worldwide-public-cloud-revenue-to-grow-6point3-percent-in-2020"
+            target="_blank"
+            >according to Gartner, Inc.
+          </a>
+        </p>
+        <p>
+          North America is the largest cloud service market and Aisa Pacific is
+          the fastest growing market, according to
+          <a
+            href="https://www.researchandmarkets.com/reports/5136796/cloud-computing-market-by-service-model?utm_source=GNOM&utm_medium=PressRelease&utm_code=8vg2fl&utm_campaign=1428189+-+Cloud+Computing+Industry+to+Grow+from+%24371.4+Billion+in+2020+to+%24832.1+Billion+by+2025%2c+at+a+CAGR+of+17.5%25&utm_exec=joca220prd"
+            target="_blank"
+            >an industry research</a
+          >
+          with key cloud service providers across the world.
+        </p>
+        <svg width="150" height="22">
+          <circle class="node" cx="11" cy="11" r="10" fill="#65FFA7"></circle>
+          <circle
+            class="node fixed"
+            cx="135"
+            cy="11"
+            r="10"
+            fill="#65FFA7"
+          ></circle>
+        </svg>
+        <span>Drag to move!</span>
+        <span>Click to reset!</span>
+      </div>
+    </div>
+    <div id="chart"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="force.js"></script>
+  </body>
+</html>

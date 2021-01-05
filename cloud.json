@@ -1,0 +1,123 @@
+{
+  "name": "Cloud service",
+  "children": [
+    {
+      "name": "Cloud Infrastructure Service",
+      "children": [
+        {
+          "name": "IaaS & PaaS",
+          "children": [
+            {
+              "name": "Amazon"
+            },
+            {
+              "name": "Microsoft"
+            },
+            {
+              "name": "Google"
+            }
+          ]
+        },
+        {
+          "name": "Hosted Private Cloud",
+          "children": [
+            {
+              "name": "IBM"
+            },
+            {
+              "name": "Rackspace"
+            },
+            {
+              "name": "NTT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure Hardware and Software",
+      "children": [
+        {
+          "name": "Public Cloud",
+          "children": [
+            {
+              "name": "Dell EMC"
+            },
+            {
+              "name": "Cisco"
+            },
+            {
+              "name": "HPE"
+            }
+          ]
+        },
+        {
+          "name": "Private & Hybrid Cloud",
+          "children": [
+            {
+              "name": "Dell EMC"
+            },
+            {
+              "name": "Microsoft"
+            },
+            {
+              "name": "HPE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cloud Data Center",
+      "children": [
+        {
+          "name": "Colocation & Leasing",
+          "children": [
+            {
+              "name": "Eigital Realty"
+            },
+            {
+              "name": "Equinix"
+            },
+            {
+              "name": "CyrusOne"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other Cloud Services",
+      "children": [
+        {
+          "name": "Enterprice SaaS",
+          "children": [
+            {
+              "name": "Microsoft"
+            },
+            {
+              "name": "Salesforce"
+            },
+            {
+              "name": "Adobe"
+            }
+          ]
+        },
+        {
+          "name": "UCaaS",
+          "children": [
+            {
+              "name": "RingCentral"
+            },
+            {
+              "name": "Mitel"
+            },
+            {
+              "name": "8x8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
